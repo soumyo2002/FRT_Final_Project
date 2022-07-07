@@ -1,0 +1,187 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar */
+#nav{
+    /* To bring logo and nav bar in line */
+    display: flex; 
+    align-items: center;
+    position: relative;
+}
+
+/* before tag used so that background doesn;t remove the logo and list  */
+#nav::before{
+    /* empty content who will have background color  */
+    content: "";
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* So that it is nehind the navbar */
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#nav{
+    /* An element with position: relative; is positioned relative to its normal position. */
+
+    /* An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). */
+
+    /* Now if background is position absolute then it will position according to nearest element which is navbar and nav will be position relative so that it doesn't move away from its normal position. Right now it is static,sp it will cover entire page,so making it relative will ensure it maintains its size */
+
+    position: relative;
+}
+
+/* Navigation bar: Logo */
+#logo img{
+    /* Logo is too large so make it small */
+    width: 120px;
+    height: 120px;
+}
+
+/* Navigation bar: List */
+#nav ul{
+    /* Once I use flex the list items will come side by side */
+    display: flex;
+}
+
+#nav ul li{
+    /* To remove bullets */
+    list-style: none;
+}
+
+#nav ul li a{
+    /* Putting space between the home about us... */
+    padding: 8px 30px;
+    /* to remove underlines from the a tag  */
+    text-decoration: none;
+    /* To make oval button type  */
+    border-radius: 15px;
+    color: black;
+    font-family: 'Oswald', sans-serif;
+}
+
+#nav ul li a:hover{
+    color: red;
+    background-color: white;
+}
+
+/* Section head  */
+#head{
+    position: relative;
+    display: flex;
+    /* flex is by default row direction so we have to make it column  */
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* adding background image  */
+#head::before{
+    content: "";
+    position: absolute;
+    background: url(/img/kelly-sikkema-XX2WTbLr3r8-unsplash\ \(1\).jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#head h1{
+    font-size: 6rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+#head p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Baloo Da 2', cursive;
+}
+
+/* chatbot */
+#chatbot{
+    /* essential to have it as relative position so that IT ONLY takes as much space as REQUIRED */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+}
+
+#chatbot::before{
+    /* empty content who will have background color  */
+    content: "";
+    background: url(/img/hybrid-uGP_6CAD-14-unsplash.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* So that it is nehind the navbar */
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#About::before{
+    /* empty content who will have background color  */
+    content: "";
+    /* background-color: aqua; */
+    background-color: aqua;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* So that it is nehind the navbar */
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#About h1{
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px 12px;
+    padding: 12px 12px;
+    word-spacing: 4px;
+    line-height: 50px;
+}
+
+
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer ul{
+    display: flex;
+}
+
+footer ul li{
+    list-style: none;
+}
+
+footer i{
+    margin: 20px 0px;
+}
+footer ul li a{
+    /* Putting space between the home about us... */
+    padding: 8px 30px;
+    /* to remove underlines from the a tag  */
+    text-decoration: none;
+    color: aqua;
+}
+
+footer ul li a:hover{
+    color: red;
+}

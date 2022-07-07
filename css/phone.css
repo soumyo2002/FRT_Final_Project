@@ -1,0 +1,39 @@
+#nav{
+    /* to bring nav bar below logo to take less space  */
+    flex-direction: column;
+}
+
+#head{
+    /* To make the height of nav bar and title small */
+    height: 120px;
+}
+
+#nav ul li a{
+    /* To decrease space between icons */
+    padding: 0px 6px;
+    /* for small font of icons  */
+    font-size: 0.7rem;
+}
+
+#head h1{
+    /* to avoid overflow when in small screen */
+    overflow: hidden;
+    font-size: 1rem;
+}
+
+#head p{
+    /* to avoid overflow when in small screen */
+    font-size: 0.5rem;
+}
+
+footer{
+    overflow: hidden;
+}
+
+footer ul li a {
+    padding: 0px 5px;
+}
+
+footer #copyright{
+    font-size: 0.4rem;
+}

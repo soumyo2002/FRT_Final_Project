@@ -53,4 +53,4 @@ The code is written on Visual Studio Code and is deployed using Azure static web
 
 ## Project Link
 
-https://black-bush-0aa1b4610.1.azurestaticapps.net
+https://soumyo2002.github.io/FRT_Final_Project/

@@ -9,7 +9,7 @@ QnA Maker is a cloud-based Natural Language Processing (NLP) service that allows
 It is used to find the most appropriate answer for any input from your custom knowledge base (KB) of information. 
 The ChatBot uses Azure QnA maker which helps in storing FAQs and answers to potential questions that can be asked by the user and Azure Bot Service
 which provides artificial intelligence (AI) chatbot which helps in providing an interactive environment to the user. It also uses HTML and CSS for webpage design. 
-The code is written on Visual Studio Code and is deployed using Azure static web apps.
+The code is written on Visual Studio Code and is deployed using Github.
 ## Screenshots:
 **1st step:Created azure services named TalkToMeBot**
 
